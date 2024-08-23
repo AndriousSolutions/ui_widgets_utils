@@ -11,7 +11,7 @@ library ui_widgets_utils;
 
 import 'dart:ui' show ImageFilter;
 
-import '/ui_widgets_utils.dart';
+import '/src/_ui_widgets_utils.dart';
 
 export 'dart:ui' show ImageFilter;
 

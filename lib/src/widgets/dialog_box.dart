@@ -9,7 +9,7 @@ library ui_widgets_utils;
 //          Created  22 August 2024
 //
 
-import '/ui_widgets_utils.dart';
+import '/src/_ui_widgets_utils.dart';
 
 /// A high-level function
 /// Displays a String passing specific one to two button options

@@ -1,7 +1,8 @@
 name: ui_widgets_utils
 description: "user interface widgets and utilities"
-version: 1.0.0
+version: 1.1.0
 homepage: https://www.andrioussolutions.com
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 environment:
   sdk: ^3.0.0
@@ -27,6 +28,9 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+
+  # so that you can use the icons in the material Icons class.
+  uses-material-design: true
 
   # To add assets to your package, add an assets section, like this:
   # assets:

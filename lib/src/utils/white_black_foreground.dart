@@ -1,6 +1,14 @@
 /// User Interface Widgets and Utilities
 library ui_widgets_utils;
 
+/// Copyright 2019 Andrious Solutions Ltd. All rights reserved.
+/// Use of this source code is governed by a 2-clause BSD License.
+/// The main directory contains that LICENSE file.
+///
+///          Created  14 Nov 2019
+///
+///
+
 import 'dart:math';
 import 'package:flutter/material.dart';
 

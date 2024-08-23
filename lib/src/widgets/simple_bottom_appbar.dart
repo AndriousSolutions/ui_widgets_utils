@@ -11,42 +11,8 @@ library ui_widgets_utils;
 // https://medium.com/@guptamanas1998/get-fluttered-a-deceptively-simple-bottom-app-bar-part-2-879ddb7b063c
 //
 //
-import 'package:flutter/material.dart'
-    show
-        Animation,
-        AnimationController,
-        BottomAppBar,
-        BuildContext,
-        Center,
-        ClipRect,
-        Column,
-        Container,
-        CurvedAnimation,
-        Curves,
-        FlexFit,
-        Flexible,
-        FontWeight,
-        FractionalTranslation,
-        Icon,
-        IconData,
-        Icons,
-        Interval,
-        Key,
-        MainAxisAlignment,
-        Matrix4,
-        Offset,
-        Opacity,
-        Row,
-        State,
-        StatefulWidget,
-        Text,
-        TextButton,
-        TextStyle,
-        TickerProviderStateMixin,
-        Transform,
-        Tween,
-        VoidCallback,
-        Widget;
+
+import '/src/_ui_widgets_utils.dart';
 
 /// Provides a simple Bottom Bar displayed on the screen.
 class SimpleBottomAppBar extends StatefulWidget {
