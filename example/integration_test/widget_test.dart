@@ -27,7 +27,7 @@ void integrationTesting() {
 
     /// Flutter won’t automatically rebuild your widget in the test environment.
     /// Use pump() or pumpAndSettle() to ask Flutter to rebuild the widget.
-    await tester.pumpWidget(MyApp());
+    await tester.pumpWidget(const MyApp());
 
     /// pumpAndSettle() waits for all animations to complete.
     await tester.pumpAndSettle();

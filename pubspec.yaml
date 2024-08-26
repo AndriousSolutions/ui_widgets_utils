@@ -1,6 +1,6 @@
 name: ui_widgets_utils
 description: "user interface widgets and utilities"
-version: 1.1.0
+version: 1.1.0+1
 homepage: https://www.andrioussolutions.com
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 

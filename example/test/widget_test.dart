@@ -1,10 +1,4 @@
-/// Copyright 2024 Andrious Solutions Ltd. All rights reserved.
-/// Use of this source code is governed by a 2-clause BSD License.
-/// The main directory contains that LICENSE file.
-///
-///          Created 22 August, 2024
-///
-
+//
 import 'package:flutter/material.dart';
 
 import 'package:flutter_test/flutter_test.dart';
