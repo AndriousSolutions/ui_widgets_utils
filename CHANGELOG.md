@@ -1,7 +1,8 @@
 
-## 1.1.0+1
+## 1.1.0+2
 August 25, 2024
 - Developed test files 
+- Introduce a README.md file
 
 ## 1.1.0
 August 22, 2024

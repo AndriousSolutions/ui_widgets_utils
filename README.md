@@ -1,39 +1,30 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# UI Widgets Utilities
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+<table>
+  	<caption>Contents</caption>
+    <tbody>
+      <tr>
+       <td><a href="#scroll">class SnappingListScrollPhysics</a></td>
+       <td><a href="#varstr">class VarStr</a></td>
+       <td><a href="#foreground">bool useWhiteForeground()</a></td>
+       <td><a href="#showbox">Future<\bool>showBox()</a></td>
+       <td><a href="#dialogbox">void dialogBox()</a></td>
+       <td><a href="#msgbox">class MsgBox</a></td>
+       <td><a href="#dialogbox">class DialogBox</a></td>
+      </tr>
+    </tbody>
+</table>
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+<h2 id="scroll">class SnappingListScrollPhysics</h2>
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+<h2 id="varstr">class VarStr</h2>
 
-## Features
+<h2 id="foreground">bool useWhiteForeground()</h2>
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+<h2 id="showbox">Future<\bool>showBox()</h2>
 
-## Getting started
+<h2 id="dialogbox">void dialogBox()</h2>
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+<h2 id="msgbox">class MsgBox</h2>
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+<h2 id="dialogbox">class DialogBox</h2>
