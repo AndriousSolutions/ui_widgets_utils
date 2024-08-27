@@ -1,4 +1,4 @@
 // ignore: avoid_relative_lib_imports
-import '../example/lib/main.dart';
+import '../example/test/widget_test.dart';
 
-void main() => const MyApp();
+void main() => testApp();

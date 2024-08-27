@@ -36,5 +36,5 @@ void testApp() {
   });
 
   //
-  group('Test Fluttery Framework', integrationTesting);
+  group('Test Example App', integrationTesting);
 }

@@ -333,7 +333,8 @@ Future<T?> showDialogBox<T>(
   );
 }
 
-/// This dialog doesn't stop. The app continues with it displayed.
+/// This dialog doesn't stop the app. The app continues with it displayed.
+/// Calls Flutter's [showDialog]
 void dialogBox(
   BuildContext context, {
   String? title,
@@ -353,7 +354,8 @@ void dialogBox(
   showDialog<bool>(
     context: context,
     builder: (BuildContext context) {
-      return _DialogWindow(
+      // Open Flutter's SimpleDialog with the function, show()
+      return _SimpleDialog(
         context,
         title: title,
         button01: button01,
@@ -373,8 +375,9 @@ void dialogBox(
   );
 }
 
-class _DialogWindow with DialogOptions {
-  _DialogWindow(
+// Open Flutter's SimpleDialog with the function, show()
+class _SimpleDialog with DialogOptions {
+  _SimpleDialog(
     this.context, {
     this.title,
     Option? button01,

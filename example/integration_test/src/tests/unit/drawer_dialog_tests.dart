@@ -1,11 +1,19 @@
-import '_unit_imports.dart';
+/// Copyright 2024 Andrious Solutions Ltd. All rights reserved.
+/// Use of this source code is governed by a 2-clause BSD License.
+/// The main directory contains that LICENSE file.
+///
+///          Created 26 August, 2024
+///
+
+//
+import '../../_test_imports.dart';
 
 const _location = '========================== drawer_dialog_tests.dart';
 
 //
 Future<void> dialogTests(WidgetTester tester) async {
   // Programmatically open the Drawer
-  ScaffoldState state = tester.firstState(find.byType(Scaffold));
+  final ScaffoldState state = tester.firstState(find.byType(Scaffold));
 
   expect(state, isNotNull, reason: _location);
 

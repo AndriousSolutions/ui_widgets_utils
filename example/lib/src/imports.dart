@@ -1,6 +1,8 @@
 //
 export 'package:flutter/material.dart';
 
+export 'package:ui_widgets_utils/ui_widgets_utils.dart';
+
 export 'package:state_set/state_set.dart';
 
 export 'package:example/main.dart';
