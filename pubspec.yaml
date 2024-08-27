@@ -1,6 +1,6 @@
 name: ui_widgets_utils
-description: "user interface widgets and utilities"
-version: 1.1.0+3
+description: "Widgets and Utilities to enhance UI and UX with dialog windows, spinners and buttons"
+version: 1.1.0+4
 homepage: https://www.andrioussolutions.com
 
 environment:
