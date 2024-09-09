@@ -918,6 +918,7 @@ class DialogBox with DialogOptions {
 
   /// Display the Dialog window.
   Future<void> show({
+    BuildContext? context,
     String? title,
     Option? button01,
     Option? button02,
@@ -930,9 +931,15 @@ class DialogBox with DialogOptions {
     bool? barrierDismissible,
   }) {
     //
+    context = context ?? this.context;
+
     if (context == null) {
       return Future.value();
     }
+    
+    // Try to find a Navigarot's context
+    context = Navigator.maybeOf(context)?.context ?? context;
+
     title = title ?? this.title;
     title ??= '';
     this.button01 ??= button01;
@@ -943,10 +950,10 @@ class DialogBox with DialogOptions {
     body = body ?? this.body;
     body ??= [const SizedBox.shrink()];
     actions ??= this.actions;
-    actions ??= _listOptions(context!);
+    actions ??= _listOptions(context);
     barrierDismissible ??= this.barrierDismissible ?? false;
     return showDialog<void>(
-      context: context!,
+      context: context,
       barrierDismissible: barrierDismissible,
       builder: (_) => AlertDialog(
         title: Text(title!),

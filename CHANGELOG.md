@@ -1,4 +1,8 @@
 
+## 1.2.0
+August 28, 2024
+- Include context parameter in show() function.
+
 ## 1.1.0+3
 August 25, 2024
 - Developed test files 
