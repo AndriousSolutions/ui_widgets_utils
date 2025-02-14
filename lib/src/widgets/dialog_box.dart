@@ -17,7 +17,7 @@ import '/src/_ui_widgets_utils.dart';
 /// Displays a particular dialogue box depending on platform.
 Future<bool> showBox({
   required BuildContext context,
-  required bool useMaterial,
+  bool? useMaterial,
   String? text,
   Option? button01,
   Option? button02,
@@ -54,7 +54,7 @@ Future<bool> showBox({
   button01 ??= OKOption();
   bool? result;
 
-  if (useMaterial) {
+  if (useMaterial ?? true) {
     //
     result = await showDialog<bool>(
       context: context,
@@ -236,7 +236,7 @@ Widget textButtonOption<T>(
       clipBehavior: option?.clipBehavior,
       statesController: option?.statesController,
       isSemanticButton: option?.isSemanticButton ?? true,
-      iconAlignment: option?.iconAlignment ?? IconAlignment.start,
+      // iconAlignment: option?.iconAlignment ?? IconAlignment.start, // as of DART 2.9.0
       child: option?.child ?? Text(option?.text ?? text ?? ''),
     );
 
@@ -442,7 +442,7 @@ mixin DialogOptions {
         clipBehavior: button01?.clipBehavior,
         statesController: button01?.statesController,
         isSemanticButton: button01?.isSemanticButton,
-        iconAlignment: button01?.iconAlignment,
+        // iconAlignment: button01?.iconAlignment, // as of DART 2.9.0
         child: child,
       );
     } else {
@@ -464,7 +464,7 @@ mixin DialogOptions {
         clipBehavior: button02?.clipBehavior,
         statesController: button02?.statesController,
         isSemanticButton: button02?.isSemanticButton,
-        iconAlignment: button02?.iconAlignment,
+        // iconAlignment: button02?.iconAlignment,  // as of DART 2.9.0
         child: child,
       );
     } else {
@@ -535,7 +535,7 @@ class Option extends ButtonStyleButton {
     WidgetStatesController? statesController,
     bool? isSemanticButton,
     Widget? child,
-    IconAlignment? iconAlignment,
+    // IconAlignment? iconAlignment,  // as of DART 2.9.0
   })  : assert(result != null, 'Must provide a option result!'),
         super(
           onPressed: onPressed,
@@ -549,7 +549,7 @@ class Option extends ButtonStyleButton {
           statesController: statesController,
           isSemanticButton: isSemanticButton,
           child: child,
-          iconAlignment: iconAlignment ?? IconAlignment.start,
+          // iconAlignment: iconAlignment ?? IconAlignment.start,  // as of DART 2.9.0
         );
 
   // /// Key used for testing
@@ -591,7 +591,7 @@ class OKOption extends Option {
     super.statesController,
     super.isSemanticButton,
     super.child,
-    super.iconAlignment,
+    // super.iconAlignment,  // as of DART 2.9.0
   }) : super(
           key: key,
           text: 'OK',
@@ -621,7 +621,7 @@ class CancelOption extends Option {
     super.statesController,
     super.isSemanticButton,
     super.child,
-    super.iconAlignment,
+    // super.iconAlignment,  // as of DART 2.9.0
   }) : super(
           key: key,
           text: 'Cancel',

@@ -1,4 +1,10 @@
 
+## 1.2.1
+February 14, 2025
+- Updated rules in analysis_options.yaml
+- As of Dart 2.9.0, named parameter 'iconAlignment' was removed from TextButton widget.
+  Use ButtonStyle.iconAlignment instead.
+
 ## 1.2.0
 August 28, 2024
 - Include context parameter in show() function.

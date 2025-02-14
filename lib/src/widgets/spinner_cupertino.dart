@@ -21,7 +21,8 @@ class SpinnerCupertino<T> extends StatefulWidget {
     required this.values,
     this.itemBuilder,
     this.onSelectedItemChanged,
-    this.inWebPlatform,
+    @Deprecated("Use 'mouseUse' instead.") this.inWebPlatform,
+    this.mouseUse,
   }) : assert(
           values.isNotEmpty ||
               values.where((T item) {
@@ -52,6 +53,9 @@ class SpinnerCupertino<T> extends StatefulWidget {
 
   /// In the Web platform or not
   final bool? inWebPlatform;
+
+  /// Use the mouse on the Spinner
+  final bool? mouseUse;
 
   @override
   State createState() => _SpinnerCupertinoState<T>();
@@ -136,7 +140,7 @@ class _SpinnerCupertinoState<T> extends State<SpinnerCupertino<T>> {
     );
 
     // By design, gestures are turned off on browser screens
-    if (this.widget.inWebPlatform ?? false) {
+    if ((this.widget.inWebPlatform ?? false) || (this.widget.mouseUse ?? false)) {
       //
       widget = ScrollConfiguration(
         behavior: ScrollConfiguration.of(context).copyWith(
