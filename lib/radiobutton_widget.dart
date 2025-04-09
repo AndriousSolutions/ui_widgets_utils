@@ -2,4 +2,4 @@
 library ui_widgets_utils;
 
 //
-export '/src/widgets/radiobutton_widget.dart';
+export 'widgets/radiobutton_widget.dart';

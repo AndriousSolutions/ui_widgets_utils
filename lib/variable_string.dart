@@ -2,4 +2,4 @@
 library ui_widgets_utils;
 
 //
-export '/src/utils/variable_string.dart';
+export 'utils/variable_string.dart';

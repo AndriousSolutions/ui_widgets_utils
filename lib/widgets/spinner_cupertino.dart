@@ -5,7 +5,8 @@ library ui_widgets_utils;
 // Use of this source code is governed by a 2-clause BSD License.
 // The main directory contains that LICENSE file.
 
-import '/src/_ui_widgets_utils.dart';
+//import '/src/_ui_widgets_utils.dart';
+import '/ui_widgets_utils.dart';
 
 import 'package:flutter/gestures.dart' show PointerDeviceKind;
 

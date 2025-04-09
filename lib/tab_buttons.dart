@@ -2,4 +2,4 @@
 library ui_widgets_utils;
 
 //
-export '/src/widgets/tab_buttons.dart';
+export 'widgets/tab_buttons.dart';

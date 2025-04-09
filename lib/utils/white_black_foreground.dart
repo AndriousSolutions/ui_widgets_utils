@@ -22,9 +22,9 @@ Color whichForegroundColor(Color backgroundColor, {double bias = 0.0}) =>
 /// the background color, and optional bias.
 /// Reference: https://www.w3.org/TR/WCAG20-TECHS/G18.html
 bool useWhiteForeground(Color backgroundColor, {double bias = 0.0}) {
-  final v = sqrt(pow(backgroundColor.red, 2) * 0.299 +
-          pow(backgroundColor.green, 2) * 0.587 +
-          pow(backgroundColor.blue, 2) * 0.114)
+  final v = sqrt(pow(backgroundColor.r, 2) * 0.299 +
+          pow(backgroundColor.g, 2) * 0.587 +
+          pow(backgroundColor.b, 2) * 0.114)
       .round();
   return v < 130 + bias;
 }

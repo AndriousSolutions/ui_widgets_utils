@@ -2,4 +2,4 @@
 library ui_widgets_utils;
 
 //
-export '/src/widgets/simple_bottom_appbar.dart';
+export 'widgets/simple_bottom_appbar.dart';

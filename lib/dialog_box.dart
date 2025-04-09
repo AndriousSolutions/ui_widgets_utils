@@ -2,4 +2,4 @@
 library ui_widgets_utils;
 
 //
-export '/src/widgets/dialog_box.dart';
+export 'widgets/dialog_box.dart';

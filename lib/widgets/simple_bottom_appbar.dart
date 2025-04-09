@@ -12,7 +12,8 @@ library ui_widgets_utils;
 //
 //
 
-import '/src/_ui_widgets_utils.dart';
+//import '/src/_ui_widgets_utils.dart';
+import '/ui_widgets_utils.dart';
 
 /// Provides a simple Bottom Bar displayed on the screen.
 class SimpleBottomAppBar extends StatefulWidget {

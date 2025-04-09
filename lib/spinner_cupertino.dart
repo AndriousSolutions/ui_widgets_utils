@@ -2,4 +2,4 @@
 library ui_widgets_utils;
 
 //
-export '/src/widgets/spinner_cupertino.dart';
+export 'widgets/spinner_cupertino.dart';
