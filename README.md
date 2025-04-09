@@ -7,6 +7,7 @@
        <td><a href="#scroll">class SnappingListScrollPhysics</a></td>
        <td><a href="#varstr">class VarStr</a></td>
        <td><a href="#foreground">bool useWhiteForeground()</a></td>
+       <td><a href="#radio">void radioButton()</a></td>
        <td><a href="#showbox">Future<\bool>showBox()</a></td>
        <td><a href="#dialogbox">void dialogBox()</a></td>
        <td><a href="#msgbox">class MsgBox</a></td>

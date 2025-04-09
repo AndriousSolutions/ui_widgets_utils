@@ -91,8 +91,7 @@ unused.txt
 /obfuscate/
 
 # Android related
-google-services.json
-#/android/
+google-services/android/
 #!/android/app/build.gradle
 #!/android/build.gradle
 
