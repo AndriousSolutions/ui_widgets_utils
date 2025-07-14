@@ -1,4 +1,5 @@
 library;
+
 // Copyright 2024 Andrious Solutions Ltd. All rights reserved.
 // Use of this source code is governed by a 2-clause BSD License.
 // The main directory contains that LICENSE file.
@@ -10,9 +11,7 @@ library;
 import 'dart:ui' as ui show TextHeightBehavior;
 
 ///
-//import '/src/_ui_widgets_utils.dart';
-import '/ui_widgets_utils.dart';
-
+import 'package:flutter/material.dart';
 
 ///  Example:
 ///
@@ -69,17 +68,14 @@ abstract class RadioButtons<T> extends StatefulWidget {
 ///
 class _RadioButtonsState<T> extends State<RadioButtons<T>> {
   @override
-  void initState() {
-    super.initState();
-    final controller = widget.controller;
-    controller.initState(this);
+  Widget build(BuildContext context) {
+    widget.controller._assignState(this);
+    return widget.radioButtons(context);
   }
-
-  @override
-  Widget build(BuildContext context) => widget.radioButtons(context);
 }
 
 /// Returns the 'Radio' widgets
+/// Use in abstract function, Widget radioButtons(BuildContext context);
 List<Widget> radioButtonsBuilder<T>(
   // Radio
   dynamic items,
@@ -315,7 +311,7 @@ class RadioButtonsController<T> {
   bool get isChanged => groupValue != initialValue;
 
   /// Call in State's initState()
-  void initState(_RadioButtonsState<T> state) {
+  void _assignState(_RadioButtonsState<T> state) {
     _state = state;
     statefulWidget = state.widget;
   }

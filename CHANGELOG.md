@@ -1,4 +1,8 @@
 
+## 1.3.2
+July 14, 2025
+- bug in radiobutton_widget.dart: _assignState() now in build()
+
 ## 1.3.1
 April 08, 2025
 - radiobutton_widget.dart 
